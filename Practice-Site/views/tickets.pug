@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title User Input Form
+    link(rel="stylesheet", href="styles.css")
+  body
+    .form-wrapper 
+        form(method="POST")
+            label(for="title") Title: 
+            input(type="text", id="title", name="title", required)
+            label(for="description") Description:
+            textarea(id="description", name="description", required)
+            label(for="priority") Priority:
+            select(id="priority", name="priority", required)
+                option(value="low") Low
+                option(value="medium") Medium
+                option(value="high") High
+            input(type="submit" value="Submit")
+
+
+//- doctype html
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-     title User Input Form
+//-     link(rel="stylesheet", href="styles.css")
+//-   body
+//-     .container
+//-       h1 Submit Your Details
+//-       form#userForm(action="/submit", method="POST") // Specify the action and method attributes
+//-         label(for="title") Title:
+//-         input(type="text", id="title", name="title", required)
+//-         br
+//-         label(for="description") Description:
+//-         textarea(id="description", name="description", required)
+//-         br
+//-         label(for="name") Name:
+//-         input(type="text", id="name", name="name", required)
+//-         br
+//-         label(for="contact") Contact Info:
+//-         input(type="text", id="contact", name="contact", required)
+//-         br
+//-         label(for="priority") Priority:
+//-         select(id="priority", name="priority", required)
+//-           option(value="low") Low
+//-           option(value="medium") Medium
+//-           option(value="high") High
+//-         br
+//-         button(type="submit") Submit
